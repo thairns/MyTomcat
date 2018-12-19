@@ -9,9 +9,11 @@ public class HTMLFilter implements Filter {
     public void doFilter(ServletRequest request, FilterChain chain) {
         String context = (String)request.getAttribute("context");
 
-        context.replaceAll("</br>","\r\n" + "(HTMLFilter)");
-        context.replaceAll("&quot;","\"");
-        context.replaceAll("&nbsp;"," ");
+        context = context.replaceAll("</br>","\r\n" + "(HTMLFilter)")
+                .replaceAll("&quot;","\"")
+                .replaceAll("&nbsp;"," ");
+
+        request.setAttribute("context",context);
         chain.doFilter(request);
     }
 }

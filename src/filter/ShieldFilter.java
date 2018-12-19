@@ -15,7 +15,7 @@ public class ShieldFilter implements Filter{
     public void doFilter(ServletRequest request, FilterChain chain) {
         String context = (String) request.getAttribute("context");
         for(String shield : shields){
-            context.replaceAll(shield,"**");
+            context = context.replaceAll(shield,"**");
         }
         request.setAttribute("context",context);
 
