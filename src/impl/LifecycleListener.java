@@ -1,6 +1,6 @@
 package impl;
 
-import server.LifecycleEvent;
+import observer.LifecycleEvent;
 
 //observer
 public interface LifecycleListener {

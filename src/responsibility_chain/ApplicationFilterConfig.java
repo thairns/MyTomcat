@@ -1,4 +1,4 @@
-package server;
+package responsibility_chain;
 
 import filter.StandardFilter;
 import impl.Filter;
@@ -6,7 +6,7 @@ import impl.Filter;
 public class ApplicationFilterConfig {
     private Filter filter = null;
 
-    ApplicationFilterConfig(Filter filter){
+    public ApplicationFilterConfig(Filter filter){
         this.filter = filter;
     }
 

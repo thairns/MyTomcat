@@ -1,8 +1,9 @@
 package server;
 
 import impl.Valve;
+import template.LifecycleBase;
 
-public class Connector extends LifecycleBase{
+public class Connector extends LifecycleBase {
     private Valve basic = null;
 
     public Connector(){};

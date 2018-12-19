@@ -1,6 +1,9 @@
-package server;
+package responsibility_chain;
 
+import factory.ApplicationFilterFactory;
 import impl.Valve;
+import responsibility_chain.ApplicationFilterChain;
+import server.Request;
 
 public final class StandardWrapperValve  implements Valve{
 

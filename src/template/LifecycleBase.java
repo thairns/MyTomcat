@@ -1,7 +1,9 @@
-package server;
+package template;
 
 import impl.Lifecycle;
 import impl.LifecycleListener;
+import observer.LifecycleSupport;
+
 //subject
 public abstract class LifecycleBase implements Lifecycle{
 
@@ -22,7 +24,7 @@ public abstract class LifecycleBase implements Lifecycle{
         return lifecycle.findLifecycleListeners();
     }
 
-    protected abstract void startInternal();
-    protected abstract void stopInternal();
-    protected abstract void destroyInternal();
+    public abstract void startInternal();
+    public abstract void stopInternal();
+    public abstract void destroyInternal();
 }

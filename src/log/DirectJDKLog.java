@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-package server;
+package log;
 
 
 import impl.Log;
 
 import java.util.logging.*;
 
-class DirectJDKLog implements Log {
+public class DirectJDKLog implements Log {
     public Logger logger;
     
     private static final String SIMPLE_FMT="java.util.logging.SimpleFormatter";

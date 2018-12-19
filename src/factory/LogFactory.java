@@ -15,10 +15,11 @@
  * limitations under the License.
  */ 
 
-package server;
+package factory;
 
 
 import impl.Log;
+import log.DirectJDKLog;
 
 import java.util.Properties;
 import java.util.logging.LogManager;

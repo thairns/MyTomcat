@@ -14,11 +14,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package server;
+package facade;
 
 
 import impl.FilterChain;
 import impl.HttpServletRequest;
+import server.Request;
 
 public class RequestFacade implements HttpServletRequest {
 

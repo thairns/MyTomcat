@@ -1,4 +1,4 @@
-package server;
+package responsibility_chain;
 
 import impl.Filter;
 import impl.FilterChain;
@@ -25,7 +25,7 @@ public class ApplicationFilterChain  implements FilterChain{
         }
     }
 
-    void addFilter(ApplicationFilterConfig filterConfig){
+    public void addFilter(ApplicationFilterConfig filterConfig){
         for(ApplicationFilterConfig filter:filters)
             if(filter==filterConfig)
                 return;

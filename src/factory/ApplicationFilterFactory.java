@@ -1,9 +1,11 @@
-package server;
+package factory;
 
 import filter.HTMLFilter;
 import filter.ShieldFilter;
 import filter.StandardFilter;
 import impl.ServletRequest;
+import responsibility_chain.ApplicationFilterChain;
+import responsibility_chain.ApplicationFilterConfig;
 
 public final class ApplicationFilterFactory {
     private static ApplicationFilterFactory factory = null;

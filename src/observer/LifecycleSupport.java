@@ -1,4 +1,4 @@
-package server;
+package observer;
 
 import impl.Lifecycle;
 import impl.LifecycleListener;
