@@ -17,6 +17,7 @@
 package server;
 
 
+import impl.FilterChain;
 import impl.HttpServletRequest;
 
 public class RequestFacade implements HttpServletRequest {
@@ -28,62 +29,24 @@ public class RequestFacade implements HttpServletRequest {
 
 
     @Override
-    public String getHeader(String name) {
-        if(request == null) throw new IllegalStateException("");
-        return request.getHeader(name);
-    }
-
-    @Override
-    public String getMethod() {
-        if(request == null) throw new IllegalStateException("");
-        return request.getMethod();
-    }
-
-    @Override
-    public String getPathInfo() {
-        if(request == null) throw new IllegalStateException("");
-        return request.getPathInfo();
-    }
-
-    @Override
-    public String getRequestedSessionId() {
-        if(request == null) throw new IllegalStateException("");
-        return request.getRequestedSessionId();
-    }
-
-    @Override
-    public String getRequestURI() {
-        if(request == null) throw new IllegalStateException("");
-        return request.getRequestURI();
-    }
-
-    @Override
-    public String getServletPath() {
-        if(request == null) throw new IllegalStateException("");
-        return request.getServletPath();
-    }
-
-    @Override
     public Object getAttribute(String name) {
         if(request == null) throw new IllegalStateException("");
         return request.getAttribute(name);
     }
 
     @Override
-    public String getCharacterEncoding() {
-        if(request == null) throw new IllegalStateException("");
-        return request.getCharacterEncoding();
-    }
-
-    @Override
-    public void setCharacterEncoding(String env) {
-        if(request == null) throw new IllegalStateException("");
-        request.setCharacterEncoding(env);
+    public void setFilterChain(FilterChain filterChain) {
+        request.setFilterChain(filterChain);
     }
 
     @Override
     public void setAttribute(String name, Object o) {
         if(request == null) throw new IllegalStateException("");
         request.setAttribute(name,o);
+    }
+
+    @Override
+    public String getHeader(String name) {
+        return "RequestFacade Heade";
     }
 }

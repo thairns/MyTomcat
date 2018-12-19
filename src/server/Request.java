@@ -17,46 +17,23 @@
 package server;
 
 
+import impl.FilterChain;
 import impl.HttpServletRequest;
 import impl.Log;
 
-public class Request
-implements HttpServletRequest {
+import java.util.HashMap;
+import java.util.Map;
+
+public class Request implements HttpServletRequest {
 
     private static final Log log = LogFactory.getLog(Request.class);
+    private Map<String,Object> attributes = null;
 
     public Request() {
+        attributes = new HashMap<String,Object>();
     }
 
-    @Override
-    public String getHeader(String name) {
-        return null;
-    }
 
-    @Override
-    public String getMethod() {
-        return null;
-    }
-
-    @Override
-    public String getPathInfo() {
-        return null;
-    }
-
-    @Override
-    public String getRequestedSessionId() {
-        return null;
-    }
-
-    @Override
-    public String getRequestURI() {
-        return null;
-    }
-
-    @Override
-    public String getServletPath() {
-        return null;
-    }
 
     protected RequestFacade facade = null;
 
@@ -69,21 +46,21 @@ implements HttpServletRequest {
 
     @Override
     public Object getAttribute(String name) {
-        return null;
-    }
-
-    @Override
-    public String getCharacterEncoding() {
-        return null;
-    }
-
-    @Override
-    public void setCharacterEncoding(String env) {
-
+        return attributes.get(name);
     }
 
     @Override
     public void setAttribute(String name, Object o) {
+        attributes.put(name,o);
+    }
 
+    @Override
+    public void setFilterChain(FilterChain filterChain) {
+
+    }
+
+    @Override
+    public String getHeader(String name) {
+        return "RequestHead";
     }
 }

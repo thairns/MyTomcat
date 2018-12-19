@@ -18,7 +18,7 @@
 
 package impl;
 
- interface Log {
+ public interface Log {
 
      boolean isDebugEnabled();
 

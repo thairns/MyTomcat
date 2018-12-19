@@ -1,7 +1,7 @@
 package server;
 
+import filter.StandardFilter;
 import impl.Filter;
-import impl.ServletRequest;
 
 public class ApplicationFilterConfig {
     private Filter filter = null;

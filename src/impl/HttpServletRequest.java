@@ -20,9 +20,4 @@ import java.util.Enumeration;
 
 public interface HttpServletRequest extends ServletRequest {
     String getHeader(String name);
-    String getMethod();
-    String getPathInfo();
-    String getRequestedSessionId();
-    String getRequestURI();
-    String getServletPath();
 }

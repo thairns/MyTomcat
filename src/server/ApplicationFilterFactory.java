@@ -1,5 +1,8 @@
 package server;
 
+import filter.HTMLFilter;
+import filter.ShieldFilter;
+import filter.StandardFilter;
 import impl.ServletRequest;
 
 public final class ApplicationFilterFactory {
@@ -27,5 +30,7 @@ public final class ApplicationFilterFactory {
     //初始化过滤链
     private void initFilterChain(ApplicationFilterChain filterChain) {
         filterChain.addFilter(new ApplicationFilterConfig(new StandardFilter()));
+        filterChain.addFilter(new ApplicationFilterConfig(new HTMLFilter()));
+        filterChain.addFilter(new ApplicationFilterConfig(new ShieldFilter(new String[]{"一","二"})));
     }
 }
