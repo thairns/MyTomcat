@@ -177,12 +177,7 @@ public class DirectJDKLog implements Log {
         }
     }        
 
-    // for LogFactory
-    static void release() {
-        
-    }
-    
-    static Log getInstance(String name) {
+    public static Log getInstance(String name) {
         return new DirectJDKLog( name );
     }
 }

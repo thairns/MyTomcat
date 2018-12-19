@@ -9,17 +9,17 @@ public class Connector extends LifecycleBase {
     public Connector(){};
 
     @Override
-    protected void startInternal() {
+    public void startInternal() {
         System.out.println("Connector Start");
     }
 
     @Override
-    protected void stopInternal() {
+    public void stopInternal() {
         System.out.println("Connector Stop");
     }
 
     @Override
-    protected void destroyInternal() {
+    public void destroyInternal() {
         System.out.println("Connector Destory");
     }
 
