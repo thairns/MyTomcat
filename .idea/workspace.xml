@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="693b48f5-1828-41d4-bd8b-47f785e3f44f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/impl/RequestDispatcher.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/server/ApplicationDispatcher.java" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +17,8 @@
       <file leaf-file-name="ApplicationFilterFactory.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/server/ApplicationFilterFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="33" column="100" lean-forward="false" selection-start-line="33" selection-start-column="100" selection-end-line="33" selection-end-column="100" />
+            <state relative-caret-position="506">
+              <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -395,7 +393,7 @@
       <updated>1545112047804</updated>
       <workItem from="1545112050267" duration="10425000" />
       <workItem from="1545181503401" duration="9488000" />
-      <workItem from="1545201094599" duration="8602000" />
+      <workItem from="1545201094599" duration="8818000" />
     </task>
     <task id="LOCAL-00001" summary="Input project file">
       <created>1545202375689</created>
@@ -432,14 +430,22 @@
       <option name="project" value="LOCAL" />
       <updated>1545209791478</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Version 1.0&#10;    Responsibility&#10;        └ApplicationChain  -&gt;  Filter&#10;    Factory&#10;        └ApplicationFactory&#10;    Facade&#10;        └RequestFacade">
+      <created>1545210258070</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1545210258070</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28515000" />
+    <option name="totallyTimeSpent" value="28731000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -454,7 +460,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14818764" sideWeight="0.5" order="4" side_tool="true" content_ui="combo" x="69" y="133" width="480" height="948" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14818764" sideWeight="0.5" order="4" side_tool="true" content_ui="combo" x="69" y="133" width="480" height="948" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -479,7 +485,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Input project file" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="Version 1.0&#10;    Responsibility&#10;        └ApplicationChain  -&gt;  Filter&#10;    Factory&#10;        └ApplicationFactory&#10;    Facade&#10;        └RequestFacade" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 1.0&#10;    Responsibility&#10;        └ApplicationChain  -&gt;  Filter&#10;    Factory&#10;        └ApplicationFactory&#10;    Facade&#10;        └RequestFacade" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -926,8 +933,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/server/ApplicationFilterFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="33" column="100" lean-forward="false" selection-start-line="33" selection-start-column="100" selection-end-line="33" selection-end-column="100" />
+        <state relative-caret-position="506">
+          <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
           <folding />
         </state>
       </provider>
