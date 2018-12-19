@@ -5,6 +5,7 @@ import server.Request;
 
 public class Main {
     public static void main(String[] args){
+        //外观模式、工厂模式、责任链模式、观察者模式、模板模式
         Connector connector = new Connector();
 
         //在这里创建的是request对象，但是当调用getRequest时，取得的是RequestFacade对象

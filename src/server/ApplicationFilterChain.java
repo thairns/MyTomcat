@@ -1,11 +1,13 @@
 package server;
 
+import impl.Filter;
 import impl.FilterChain;
 import impl.ServletRequest;
 
 public class ApplicationFilterChain  implements FilterChain{
     private ApplicationFilterConfig[] filters = new ApplicationFilterConfig[0];
     private int n = 0;
+    private int pos = 0;
     public static final int INCREMENT = 10;
 
     @Override
@@ -14,7 +16,13 @@ public class ApplicationFilterChain  implements FilterChain{
     }
 
     private void internalDoFilter(ServletRequest request) {
-
+        if (pos < n) {
+            ApplicationFilterConfig filterConfig = filters[pos++];
+            Filter filter = null;
+            filter = filterConfig.getFilter();
+            filter.doFilter(request,this);
+            return;
+        }
     }
 
     void addFilter(ApplicationFilterConfig filterConfig){

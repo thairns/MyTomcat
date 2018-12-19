@@ -1,5 +1,5 @@
 package impl;
 
 public interface Filter {
-    void doFilter(ServletRequest request);
+    void doFilter(ServletRequest request,FilterChain chain);
 }

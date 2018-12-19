@@ -6,15 +6,14 @@ import impl.ServletRequest;
 public class ApplicationFilterConfig {
     private Filter filter = null;
 
+    ApplicationFilterConfig(Filter filter){
+        this.filter = filter;
+    }
+
     public Filter getFilter(){
         if (this.filter != null)
             return (this.filter);
-        filter = new Filter() {
-            @Override
-            public void doFilter(ServletRequest request) {
-
-            }
-        };
+        filter = new StandardFilter();
         return filter;
     }
 

@@ -20,11 +20,12 @@ public final class ApplicationFilterFactory {
         filterChain = new ApplicationFilterChain();
         request.setFilterChain(filterChain);
         //源代码上通过配置文件加载
-        initFilterChain();
+        initFilterChain(filterChain);
         return filterChain;
     }
 
     //初始化过滤链
-    private void initFilterChain() {
+    private void initFilterChain(ApplicationFilterChain filterChain) {
+        filterChain.addFilter(new ApplicationFilterConfig(new StandardFilter()));
     }
 }
