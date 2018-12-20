@@ -20,9 +20,7 @@ public final class ApplicationFilterFactory {
 
     //构造初始化过滤链
     public ApplicationFilterChain createFilterChain(ServletRequest request){
-        ApplicationFilterChain filterChain = null;
-
-        filterChain = new ApplicationFilterChain();
+        ApplicationFilterChain filterChain = new ApplicationFilterChain();
         request.setFilterChain(filterChain);
         //源代码上通过配置文件加载
         initFilterChain(filterChain);
@@ -33,6 +31,6 @@ public final class ApplicationFilterFactory {
     private void initFilterChain(ApplicationFilterChain filterChain) {
         filterChain.addFilter(new ApplicationFilterConfig(new StandardFilter()));
         filterChain.addFilter(new ApplicationFilterConfig(new HTMLFilter()));
-        filterChain.addFilter(new ApplicationFilterConfig(new ShieldFilter(new String[]{"一","二"})));
+        filterChain.addFilter(new ApplicationFilterConfig(new ShieldFilter(new String[]{"小说","美洲"})));//过滤词
     }
 }

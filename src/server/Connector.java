@@ -21,13 +21,13 @@ public class Connector extends LifecycleBase {
 
     @Override
     public void stopInternal() {
-        System.out.println("Connector Stop");
-        setState("stop","关闭Connector");
+        setState("stop","Connector");
+        System.out.println("关闭Connector");
     }
 
-    public Request createRequest(){
+    public Request createRequest(Form form,String attribute){
         Request request = new Request();
-        request.setAttribute("context","Hello world!一二三&nbsp;三三饵丝");
+        request.setAttribute(attribute,form.getAttribute(attribute));
         return request;
     }
 

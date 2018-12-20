@@ -16,7 +16,6 @@
  */
 
 package impl;
-import java.util.Enumeration;
 
 public interface HttpServletRequest extends ServletRequest {
     String getHeader(String name);
