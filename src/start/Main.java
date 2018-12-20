@@ -30,6 +30,8 @@ public class Main {
         connector.setValve(valve);
 
         // invoke方法取得ApplicationFilterFactory
+
+        System.out.println("============过滤链=============");
         connector.getValve().invoke(request);
 
         System.out.println(request.getAttribute("context"));
