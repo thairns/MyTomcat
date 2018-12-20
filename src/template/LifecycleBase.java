@@ -4,7 +4,7 @@ import impl.Lifecycle;
 import impl.LifecycleListener;
 import observer.LifecycleSupport;
 
-//subject
+//被观察者、模板
 public abstract class LifecycleBase implements Lifecycle{
 
     private LifecycleSupport lifecycle = new LifecycleSupport(this);
@@ -26,7 +26,6 @@ public abstract class LifecycleBase implements Lifecycle{
 
     public abstract void startInternal();
     public abstract void stopInternal();
-    public abstract void destroyInternal();
 
     protected void setState(String type,Object o){
         lifecycle.fireLifecycleEvent(type,o);
