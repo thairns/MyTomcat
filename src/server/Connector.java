@@ -2,6 +2,7 @@ package server;
 
 import impl.Valve;
 import observer.ConnectorConfig;
+import responsibility_chain.StandardWrapperValve;
 import template.LifecycleBase;
 
 public class Connector extends LifecycleBase {
@@ -14,6 +15,9 @@ public class Connector extends LifecycleBase {
     public void startInternal() {
         config = new ConnectorConfig();
         addLifecycleListener(config);
+
+        StandardWrapperValve valve = new StandardWrapperValve();
+        setValve(valve);
 
         setState("start","Connector");
         System.out.println("打开Connector");

@@ -42,8 +42,7 @@ public class Main {
          *  connector将请求发送给Service容器的一条Valve责任链进行处理，当找到对应的Wrapper时，
          *  通过一系列的阈门（典型责任链模式），取得过滤链
          */
-        StandardWrapperValve valve = new StandardWrapperValve();
-        connector.setValve(valve);
+
 
         // invoke方法取得ApplicationFilterFactory(工厂模式），创建并生产责任链这一产品
         System.out.println("============过滤链=============");
