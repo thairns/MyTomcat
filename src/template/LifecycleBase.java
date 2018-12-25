@@ -27,7 +27,7 @@ public abstract class LifecycleBase implements Lifecycle{
     public abstract void startInternal();
     public abstract void stopInternal();
 
-    protected void setState(String type,Object o){
+    public void setState(String type,Object o){
         lifecycle.fireLifecycleEvent(type,o);
     }
 }
