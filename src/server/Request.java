@@ -18,17 +18,14 @@ package server;
 
 
 import facade.RequestFacade;
-import factory.LogFactory;
 import impl.FilterChain;
 import impl.HttpServletRequest;
-import impl.Log;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class Request implements HttpServletRequest {
 
-    private static final Log log = LogFactory.getLog(Request.class);
     private Map<String,Object> attributes = null;
 
     public Request() {
